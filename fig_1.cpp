@@ -2,18 +2,19 @@
 
 int main()
 {
-	printf("INGRESE UN NUMERO:: ");
-	int a ,i ,j;
+	printf("INGRESE UN NUMERO: ");
+	int a ,i ,j,t;
 	scanf("%d", &a);
-	printf(" \n FIGURA 1: \n");
-	for (i=0;i<=a;i++)
+	printf(" \n FIGURA 2: \n");
+	j=a;
+	t=a;
+	for (i=0;i<t;i++)
 	{
-		for(j=0 ; j<i;j++){
-			printf("*");	
-		}
-	printf("\n");
-
-}
-    
-        return 0;
-} 
+		for(j=a; j>0; j--){
+			printf("*");
+			}
+		printf("\n");
+		a--;
+	}
+	return 0;
+	} 
